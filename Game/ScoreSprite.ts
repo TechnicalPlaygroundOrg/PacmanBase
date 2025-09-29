@@ -24,8 +24,8 @@ export class ScoreSprite extends GeneralSprite {
         ["5000"]: new PointAndWidth(new Point(518, 196), 20)
     };
     
-    constructor(public readonly position: Point, amount: number) {
-        super(position,
+    constructor(public readonly _position: Point, amount: number) {
+        super(_position,
             new Vector2D(ScoreSprite.scorePositions[amount.toString()].width, 7),
             new Point(ScoreSprite.scorePositions[amount.toString()].width / 2, 7 / 2),
             ScoreSprite.scorePositions[amount.toString()].pos);

@@ -1,12 +1,15 @@
-/// <reference types="howler"/>
+// <reference types="howler"/>
+// import { Howl } from "howler";
 
-declare var Howl: any;
+// import { Howl } from "howler";
+
+// declare var Howl: any;
 
 export class SoundPlayer {
 
     private _loaded: boolean;
 
-    private readonly _howl: Howl;
+    private readonly _howl: InstanceType<typeof Howl>;
 
     constructor(path: string, whenLoaded: () => void) {
 
